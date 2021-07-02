@@ -3,7 +3,7 @@
  * Conversione di $_POST in oggetto
  * @param array $post
  */
-function setPostObject($post = null)
+function setPostObject($post)
 {
     $object = new stdClass();
     foreach ($post as $key => $value) {

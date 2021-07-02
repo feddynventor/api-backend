@@ -13,15 +13,13 @@ include_once "modules/io/response.php";
 // Non richiedere il token se stai eseguendo il login (ottenimento del token JWT)
 if ($input->cmd == "login")
     include_once "functions/login.php";
+else if ($input->cmd == "test")
+    include_once "functions/test.php";
 else
     include_once "modules/utility/decryptToken.php";
 
 switch ($input->cmd) {
-    // TESTING
-    case 'test':
-        if ($utente_ruolo > 1) exception("unauthorized-user");
-        include_once "functions/test.php";
-        break;
+    // TESTING avanzato
     case 'curl_test':
         if ($utente_ruolo > 1) exception("unauthorized-user");
         include_once "modules/utility/curl.php";
