@@ -4,7 +4,7 @@ include_once "config.php";
 
 // Converti POST in Array associativo
 include_once "modules/io/post.php";
-$input = setPostObject();
+$input = setPostObject($_POST);
 
 // Inclusione librerie
 include_once "modules/io/exception.php";

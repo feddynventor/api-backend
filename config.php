@@ -26,5 +26,5 @@ define("TOKEN_JWT", "DpYC6HuHPE");      //salt per hash hmac
 
 // ====================== Database ======================
 global $mysql;
-$mysql = new mysqli("10.180.231.12", "user1", "IPHZEkrbl0wx0ojn", "db");
+// $mysql = new mysqli("10.180.231.12", "user1", "IPHZEkrbl0wx0ojn", "db");
 // $mysql = new mysqli("127.0.0.1", "user2", "40ee63d03064596a", "db");
